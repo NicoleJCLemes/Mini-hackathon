@@ -10,14 +10,12 @@ function getLocation(){
         navigator.geolocation.getCurrentPosition(showPosition,showError);
     }
     else{
-        console.log("O seu navegador não suporta Geolocalização.");
+        alert("O seu navegador não suporta Geolocalização.");
     }
 
 }
 
-function showPosition(position){
-    console.log(`Latitude: ${position.coords.latitude}  
-    Longitude: ${position.coords.longitude}`); 
+function showPosition(position){   
     
     lat = position.coords.latitude;
     lon = position.coords.longitude;
@@ -55,14 +53,12 @@ function getInfoLocal(zip, country){
   
 function resposta(resp){
     object = resp.data
-    console.log(object);
 
     displayInfo();
 }
 
 function locationInfo(resp){
     local = resp.data;
-    console.log(local);
 
     getInfoByInput();
 }
@@ -90,7 +86,6 @@ function displayInfo(){
     const weather = document.getElementById("weather");
     weather.innerHTML = `${clima}`
     
-    console.log(nome,country, convert(temp), clima, codigo);
 }
 
 function convert(tempK){
