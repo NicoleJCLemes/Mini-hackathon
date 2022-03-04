@@ -1,0 +1,81 @@
+body {
+    background-color: #7db5fd;
+}
+section {
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h1 {
+    height: 10px;
+    width: 500px;
+    font-weight: 500;
+    margin: 10px auto;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+}
+
+section #location {
+    padding: 20px 0 20px 0;
+    height: 40px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+section #weather {
+    font-size: 25px;
+}
+
+section div{
+    margin: 10px auto;
+    margin-top: 30px;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+section div p {
+    width: 100px;
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10% auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.informations button {
+    margin-top: 10px;
+}
+
+.informations input {
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
